@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainFragment" >
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="342dp"
+        android:layout_height="569dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.896"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="215dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/testCon2"
+        app:layout_constraintEnd_toEndOf="@+id/view2" />
+
+    <Button
+        android:id="@+id/testCon1"
+        android:layout_width="171dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="72dp"
+        android:backgroundTint="@color/green"
+        android:onClick="connectionButton"
+        android:text="Test Connection"
+        android:textAlignment="textStart"
+        app:cornerRadius="3dp"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <EditText
+        android:id="@+id/editTextMqttUrl"
+        android:layout_width="232dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="148dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="235dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="312dp"
+        android:layout_marginEnd="96dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <EditText
+        android:id="@+id/editTextResUrl"
+        android:layout_width="229dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <Button
+        android:id="@+id/testCon2"
+        android:layout_width="173dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="452dp"
+        android:layout_marginEnd="160dp"
+        android:backgroundTint="@color/green"
+        android:onClick="connectionButton"
+        android:text="Test Connection"
+        android:textAlignment="textStart"
+        app:cornerRadius="3dp"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="301dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="520dp"
+        android:backgroundTint="@color/green"
+        android:onClick="connectionButton"
+        android:text="Save Configuration"
+        app:cornerRadius="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="376dp"
+        android:layout_marginEnd="224dp"
+        android:text="MQTT Password"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/textViewUsern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="296dp"
+        android:layout_marginEnd="228dp"
+        android:text="MQTT Username"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="264dp"
+        android:text="MQTT Port"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/textUr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
+        android:text="MQTT URL"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Resource URL"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <EditText
+        android:id="@+id/editTextPort"
+        android:layout_width="233dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="100dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
